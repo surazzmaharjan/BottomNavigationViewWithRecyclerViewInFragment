@@ -40,8 +40,8 @@ public class HomeFragment extends Fragment {
         recyclerView=root.findViewById(R.id.rvstudents);
 
         if(MainActivity.st.isEmpty()) {
-            MainActivity.st.add(new Student("Emma Watson", "Female", "30", "America"));
-            MainActivity.st.add(new Student("Hugh Jackman", "Male", "50", "Nepal"));
+            MainActivity.st.add(new Student("Henry Cavill", "Male", "36", "England"));
+            MainActivity.st.add(new Student("Gal Gadot Varsano", "Female", "34", "Petah Tikva, Israel"));
 
             MyStudentRVAdapter adapter = new MyStudentRVAdapter(MainActivity.st, getContext());
 
