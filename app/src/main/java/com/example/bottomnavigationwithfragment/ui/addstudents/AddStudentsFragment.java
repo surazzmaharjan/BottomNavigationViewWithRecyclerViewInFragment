@@ -1,6 +1,5 @@
 package com.example.bottomnavigationwithfragment.ui.addstudents;
 
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -21,9 +20,6 @@ import android.widget.Toast;
 import com.example.bottomnavigationwithfragment.MainActivity;
 import com.example.bottomnavigationwithfragment.R;
 import com.example.bottomnavigationwithfragment.model.Student;
-import com.example.bottomnavigationwithfragment.ui.home.HomeFragment;
-
-import java.util.ArrayList;
 
 public class AddStudentsFragment extends Fragment implements RadioGroup.OnCheckedChangeListener,View.OnClickListener{
 
@@ -47,7 +43,7 @@ public class AddStudentsFragment extends Fragment implements RadioGroup.OnChecke
 
         mViewModel =
                 ViewModelProviders.of(this).get(AddStudentsViewModel.class);
-        View root = inflater.inflate(R.layout.add_students_fragment, container, false);
+        View root = inflater.inflate(R.layout.fragment_add_students, container, false);
         editTextFullName = root.findViewById(R.id.fullname);
         editTextAddress = root.findViewById(R.id.address);
         editTextAge = root.findViewById(R.id.age);

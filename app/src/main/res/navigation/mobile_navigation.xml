@@ -17,14 +17,14 @@
         android:id="@+id/navigation_addstudent"
         android:name="com.example.bottomnavigationwithfragment.ui.addstudents.AddStudentsFragment"
         android:label="@string/title_addstudent"
-        tools:layout="@layout/add_students_fragment" />
+        tools:layout="@layout/fragment_add_students" />
 
 
     <fragment
         android:id="@+id/navigation_aboutus"
         android:name="com.example.bottomnavigationwithfragment.ui.aboutus.AboutUsFragment"
         android:label="@string/title_aboutus"
-        tools:layout="@layout/about_us_fragment" />
+        tools:layout="@layout/fragment_about_us" />
 
 
 </navigation>

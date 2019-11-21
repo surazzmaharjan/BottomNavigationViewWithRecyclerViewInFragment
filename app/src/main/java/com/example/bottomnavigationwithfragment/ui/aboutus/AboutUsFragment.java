@@ -29,7 +29,7 @@ public class AboutUsFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         mViewModel =
                 ViewModelProviders.of(this).get(AboutUsViewModel.class);
-        View root = inflater.inflate(R.layout.about_us_fragment, container, false);
+        View root = inflater.inflate(R.layout.fragment_about_us, container, false);
 
         WebView webview = root.findViewById(R.id.softwarica);
         WebSettings webSettings = webview.getSettings();
