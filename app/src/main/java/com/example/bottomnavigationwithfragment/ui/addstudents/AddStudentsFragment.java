@@ -107,17 +107,14 @@ public class AddStudentsFragment extends Fragment implements RadioGroup.OnChecke
         if(i== R.id.male_radio_btn)
         {
             gender="Male";
-            //Toast.makeText(this, "Male", Toast.LENGTH_SHORT).show();
         }
         if(i == R.id.female_radio_btn)
         {
             gender = "Female";
-            //Toast.makeText(this, "Female", Toast.LENGTH_SHORT).show();
         }
         if(i== R.id.other_radio_btn)
         {
             gender ="Other";
-            //Toast.makeText(this, "Other", Toast.LENGTH_SHORT).show();
         }
     }
 

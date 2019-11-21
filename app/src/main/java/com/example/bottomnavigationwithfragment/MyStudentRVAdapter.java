@@ -44,14 +44,12 @@ public class MyStudentRVAdapter extends RecyclerView.Adapter<MyStudentRVAdapter.
         holder.age.setText(stu.getAge());
         holder.address.setText(stu.getAddress());
         holder.gender.setText(stu.getGender());
-//        holder.delete.setImageResource(R.drawable.ic_delete);
         holder.delete.setImageDrawable(contexts.getResources().getDrawable(R.drawable.ic_delete));
 
         String gen= stu.getGender();
 
         if(gen=="Male"){
             holder.imageview.setImageResource(R.drawable.man);
-//            holder.imageview.setImageDrawable(context.getResources().getDrawable(R.drawable.man));
 
         }
         else if(gen=="Female"){

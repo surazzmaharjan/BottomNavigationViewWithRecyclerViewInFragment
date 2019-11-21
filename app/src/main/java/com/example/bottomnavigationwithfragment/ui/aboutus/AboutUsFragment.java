@@ -19,6 +19,8 @@ import com.example.bottomnavigationwithfragment.R;
 public class AboutUsFragment extends Fragment {
 
     private AboutUsViewModel mViewModel;
+    private WebView webview;
+    private WebSettings webSettings;
 
     public static AboutUsFragment newInstance() {
         return new AboutUsFragment();
@@ -31,8 +33,8 @@ public class AboutUsFragment extends Fragment {
                 ViewModelProviders.of(this).get(AboutUsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_about_us, container, false);
 
-        WebView webview = root.findViewById(R.id.softwarica);
-        WebSettings webSettings = webview.getSettings();
+        webview = root.findViewById(R.id.softwarica);
+        webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webview.loadUrl("https://softwarica.edu.np/");
 
